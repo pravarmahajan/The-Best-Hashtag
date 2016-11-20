@@ -9,3 +9,6 @@ hashtag_pattern = re.compile('#[A-Za-z0-9_]+')
 at_reference_pattern = re.compile("@[A-Za-z0-9_]+")
 RT_regex = re.compile("^RT ")
 http_regex = re.compile('https?:\/\/.*[\r\n]*')
+
+database_url = 'http://ec2-54-214-119-83.us-west-2.compute.amazonaws.com' \
+             '/hackathon/trendingHash.php'
