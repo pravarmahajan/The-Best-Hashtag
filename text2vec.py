@@ -29,7 +29,7 @@ while(True):
 
     tweet_data_vectorized = vectorizer.fit_transform(twitter_data)
 
-    nn_obj = NearestNeighbors(n_neighbors=10, metric='cosine',
+    nn_obj = NearestNeighbors(n_neighbors=15, metric='cosine',
                               algorithm='brute').fit(tweet_data_vectorized)
 
     with open('vectorizer.pkl', 'wb') as f:
@@ -40,5 +40,5 @@ while(True):
 
     with open('knn.pkl', 'wb') as f:
         pickle.dump(nn_obj, f)
-    print('done')
+    print('Running...')
     time.sleep(1800)
